@@ -1,0 +1,58 @@
+.btn {
+      padding: 0 40px;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 3.25; /* 325% */
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      
+      transition: all .2s ease-in;
+      
+      border-radius: 4px;
+      color: var(--color-white);
+      background-color: var(--color-orange);
+      border: 1px solid var(--color-orange);
+      @media screen and (max-width: 767.98px) {
+            padding: 0 20px;
+            font-size: 0.825rem;
+      }
+      &:hover {
+            border: 1px solid rgba(228, 60, 18, 0.575);
+            background-color: var(--hover);
+      }
+      &--small {
+            padding: 0 25px;
+
+            font-size: 0.75rem;
+            line-height: 3; /* 300% */
+            text-transform: uppercase;
+            @media screen and (max-width: 767.98px) {
+                  padding: 0 5px;
+            }
+      }
+      &--big {
+            padding: 0 112px;
+            @media screen and (max-width: 767.98px) {
+                  padding: 0 70px;
+            }
+      }
+      &--transparent {
+            background-color: unset;
+            color: var(--color-orange);
+            &:hover {
+                  color: #ffffff;
+            }
+      }
+      &--white {
+            background-color: transparent;
+            border: 1px solid var(--color-white);
+            &:hover {
+                  background-color: rgba(255, 255, 255, 0.281);
+                  border: 1px solid var(--color-white);
+            }
+      }
+      &--pop-up {
+            margin: 20px 0 0 0;
+            width: 100%;
+      }
+}

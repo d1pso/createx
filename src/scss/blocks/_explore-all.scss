@@ -1,0 +1,28 @@
+.explore-all {
+      margin: 80px 0 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 40px;
+      @media screen and (max-width: 767.98px) {
+            margin: 40px 0 0 0;
+            column-gap: 15px;
+      }
+      @media screen and (max-width: 425px) {
+            flex-direction: column;
+            row-gap: 15px;
+      }
+      // .explore-all__title
+      &__title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 1.5; /* 42px */
+            color: var(--gray-900);
+            @media screen and (max-width: 767.98px) {
+                  font-size: 1.2rem;
+            }
+      }
+      // .explore-all__btn
+      &__btn {
+      }
+}

@@ -1,0 +1,88 @@
+.decision {
+      background: var(--gray-200);
+      @media screen and (max-width: 767.98px) {
+            padding: 40px 0 40px 0;
+      }
+      // .decision__container
+      &__container {
+            display: flex;
+            align-items: center;
+            column-gap: 135px;
+            @media screen and (max-width: 1280px) {
+                  column-gap: 120px;
+            }
+            @media screen and (max-width: 1100px) {
+                  column-gap: 60px;
+            }
+            @media screen and (max-width: 767.98px) {
+                  flex-direction: column-reverse;
+                  align-items: center;
+                  row-gap: 20px;
+            }
+      }
+      // .decision__image
+      &__image {
+            width: 495px;
+            height: 550px;
+            transform: translateY(80px);
+            & img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+            }
+            @media screen and (max-width: 767.98px) {
+                  transform: none;
+                  width: 450px;
+                  height: 500px;
+            }
+            @media screen and (max-width: 500px) {
+                  width: 310px;
+                  height: 340px;
+            }
+      }
+      // .decision__content
+      &__content {
+      }
+}
+.content-decision {
+      // .content-decision__title
+      &__title {
+            margin: 0 0 60px 0;
+            @media screen and (max-width: 1000px) {
+                  font-size: 1.9rem;
+            }
+            @media screen and (max-width: 767.98px) {
+                  margin: 0 0 30px 0;
+            }
+      }
+      // .content-decision__list
+      &__list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+      }
+      // .content-decision__item
+      &__item {
+            position: relative;
+            padding: 0 0 0 36px;
+
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.6; /* 25.6px */
+            color: var(--gray-800);
+            &::before {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  left: 0;
+                  width: 20px;
+                  height: 20px;
+                  background: url('./../../img/icons/check-decision.svg') no-repeat;
+            }
+            @media screen and (max-width: 625px) {
+                  font-size: 0.825rem;
+            }
+      }
+}
+

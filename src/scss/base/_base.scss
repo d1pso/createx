@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+}
+
+body {
+      color: var(--color-main);
+      font-family: var(--font-main);
+      background-color: var(--page-bg);
+      overflow-x: hidden;
+}

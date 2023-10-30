@@ -1,0 +1,31 @@
+.clients {
+      padding: 140px 0 90px 0;
+      @media screen and (max-width: 767.98px) {
+            padding: 50px 0 40px 0;
+      }
+      // .clients__container
+      &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+      // .clients__title
+      &__title {
+            margin: 0 0 60px 0;
+      }
+      // .clients__images
+      &__images {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 102px;
+            @media screen and (max-width: 1280px) {
+                  column-gap: 50px;
+            }
+            @media screen and (max-width: 1000px) {
+                  display: flex;
+                  justify-content: center;
+                  flex-wrap: wrap;
+                  column-gap: 30px;
+            }
+      }
+}

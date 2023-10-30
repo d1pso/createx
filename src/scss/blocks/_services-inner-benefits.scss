@@ -1,0 +1,112 @@
+.services-inner-benefits {
+      padding: 80px 0 126px 0;
+
+      background: var(--color-main);
+      @media screen and (max-width: 767.98px) {
+            padding: 40px 0 50px 0;
+      }
+      // .services-inner-benefits__container
+      &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+      // .services-inner-benefits__heading
+      &__heading {
+            margin: 0 0 60px 0;
+            @media screen and (max-width: 767.98px) {
+                  margin: 0 0 30px 0;
+            }
+      }
+      // .services-inner-benefits__title
+      &__title {
+            color: var(--color-white);
+      }
+      // .services-inner-benefits__subtitle
+      &__subtitle {
+            color: var(--color-white);
+            opacity: 0.6;
+      }
+      // .services-inner-benefits__cards
+      &__cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) 285px;
+            @media screen and (max-width: 1000px) {
+                  grid-template-columns: repeat(2, 1fr) 225px;
+            }
+            @media screen and (max-width: 767.98px) {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  row-gap: 20px;
+            }
+      }
+      // .services-inner-benefits__card
+      &__card {
+            position: relative;
+            &:not(:last-child) {
+                  margin: 0 4.8vw 0 0;
+                  padding: 0 4.8vw 0 0;
+                  @media screen and (max-width: 767.98px) {
+                        margin: 0;
+                        padding: 0;
+                  }
+                  &::after {
+                        content: "";
+                        position: absolute;
+                        transform-origin: bottom right;
+                        right: 0;
+                        transform: rotate(90deg) translate(100%, 0);
+                        width: 188px;
+                        height: 1px;
+                        opacity: 0.4;
+                        background: linear-gradient(270deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+                        @media screen and (max-width: 767.98px) {
+                              left: 50%;
+                              bottom: -10px;
+                              transform: translateX(-50%);
+                        }
+                  }
+            }
+      }
+      // .services-inner-benefits__btn
+      &__btn {
+            transform: translateY(150px);
+            @media screen and (max-width: 767.98px) {
+                  transform: translateY(70px);
+            }
+      }
+
+}
+.card-services-inner-benefits {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // .card-services-inner-benefits__image
+      &__image {
+            margin: 0 0 24px 0;
+      }
+      // .card-services-inner-benefits__title
+      &__title {
+            margin: 0 0 8px 0;
+
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.5; /* 30px */
+            color: var(--color-white);
+      }
+      // .card-services-inner-benefits__text
+      &__text {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.6; /* 25.6px */
+            color: var(--color-white);
+            opacity: 0.6;
+            @media screen and (max-width: 1000px) {
+                  font-size: 0.795rem;
+            }
+      }
+}
+

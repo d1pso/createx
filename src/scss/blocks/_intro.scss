@@ -1,0 +1,173 @@
+.intro {
+      position: relative;
+      height: 100vh;
+      @media screen and (max-width: 425px) {
+            height: 80vh;
+      }
+}
+.swiper {
+}
+.intro-swiper {
+      height: 100%;
+}
+.swiper-wrapper {
+}
+.intro-swiper-wrapper {
+}
+.swiper-slide {
+}
+.intro-swiper-slide {
+}
+.intro-swiper-slide-1 {
+}
+.swiper-pagination {
+
+}
+.intro-pag {
+      counter-reset: pag;
+      display: flex;
+      left: calc((100% - 1260px) / 2) !important;
+      bottom: 120px !important;
+      @media screen and (max-width: 1280px) {
+            left: 0 !important;
+      }
+      @media screen and (max-width: 425px) {
+            bottom: 80px !important;
+      }
+      @media screen and (max-height: 750px) {
+            bottom: 55px !important;
+      }
+      @media screen and (max-height: 610px) {
+            bottom: 10px !important;
+      }
+
+      .swiper-pagination-bullet {
+            display: flex;
+            flex-direction: column;
+            width: 178px;
+            height: auto;
+            background-color: transparent;
+            opacity: 1;
+            text-align: left;
+            border-radius: 0;
+      
+            &::before {
+                  counter-increment: pag;
+                  content: '0'counter(pag);
+
+                  font-size: 1.75rem;
+                  font-weight: 700;
+                  line-height: 1.5; /* 42px */
+                  color: rgba(#fff, 0.3);
+                  transition: color .7s ease-in;
+            }
+
+            &::after {
+                  display: none;
+            }
+
+      }
+}
+.intro-bar {
+      position: relative;
+      overflow: hidden;
+      border-radius: 100px;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(#fff, 0.3);
+
+      &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .7s ease-in;
+            background-color: var(--color-white);
+      }
+}
+.swiper-pagination-bullet-active {
+      &::before {
+            color: var(--color-white) !important;
+      }
+      .intro-bar {
+            &::after {
+                  transform: scaleX(1);
+                  transform-origin: left;
+            }
+      }
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+      display: none;
+}
+.swiper-button-prev {
+      width: 48px !important;
+      height: 48px !important;
+      background-image: url('./../../img/icons/prev-btn.png');
+      @media screen and (max-width: 767.98px) {
+            display: none !important;
+      }
+}
+.swiper-button-next {
+      width: 48px !important;
+      height: 48px !important;
+      background-image: url('./../../img/icons/next-btn.png');
+      @media screen and (max-width: 767.98px) {
+            display: none !important;
+      }
+}
+.swiper-button-prev, .swiper-button-next {
+      top: var(--swiper-navigation-top-offset, 48%) !important;
+      @media screen and (max-width: 767.98px) {
+            top: var(--swiper-navigation-top-offset, 46%) !important;
+      }
+}
+
+.scroll-up {
+      position: fixed;
+      bottom: 55px;
+      right: 116px;
+      z-index: 100;
+
+      display: flex;
+      align-items: flex-end;
+      column-gap: 16px;
+
+      transition: opacity .2s ease-in, visibility .2s ease-in;
+      opacity: 0;
+      visibility: hidden;
+      cursor: pointer;
+      @media screen and (max-width: 767.98px) {
+            right: 40px;
+            bottom: 40px;
+      }
+      &--active {
+            opacity: 1;
+            visibility: visible;
+      }
+      &:hover &__btn {
+            background-color: var(--hover);
+      }
+      // .scroll-up__text
+      &__text {
+            padding: 0 0 8px 0;
+
+            text-shadow: -2px 1px 6px rgba(17, 3, 3, 0.92);
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.5%; /* 21px */
+            color: var(--color-white);
+      }
+      // .scroll-up__btn
+      &__btn {
+            padding: 8px;
+
+            transition: background-color .2s ease-in;
+            border-radius: 4px;
+            background-color: var(--color-orange);
+      }
+}

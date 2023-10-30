@@ -1,0 +1,31 @@
+:root {
+      --container-width: 1260px;
+      --container-padding: 15px;
+      
+
+      --font-main: 'Ubuntu', sans-serif;
+      // --font-accent: 'Playfair Display', serif;
+
+      --page-bg: #fff;
+      --color-main: #1E212C;
+      --gray-900: #1E212C;
+      --gray-800: #424551;
+      --gray-700: #787A80;
+      --gray-600: #9A9CA5;
+      --gray-400: #D7DADD;
+      --gray-300: #E5E8ED;
+      --gray-200: #F4F5F6;
+
+      --color-white: #fff;
+      --color-orange: #FF5A30;
+      --hover: #FC3300;
+
+      --laptop-size: 1199px;
+      --tablet-size: 767.98px;
+      --mobile-size: 599px;
+}
+
+.dark {
+      --page-bg: #252526;
+      --text-color: #fff
+}

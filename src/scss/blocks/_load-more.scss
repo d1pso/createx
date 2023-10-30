@@ -1,0 +1,20 @@
+.load-more {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+
+      &:hover .load-more__title {
+            color: var(--color-orange);
+      }
+      // .load-more__image
+      &__image {
+      }
+      // .load-more__title
+      &__title {
+            transition: color .2s ease-in;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.6; /* 25.6px */
+            color: var(--gray-800);
+      }
+}

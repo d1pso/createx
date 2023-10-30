@@ -1,0 +1,30 @@
+.discuss {
+      position: relative;
+      height: 826px;
+      // .discuss__container
+      &__container {
+            height: 826px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+      }
+      // .discuss__bg
+      &__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            & img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+            }
+      }
+      // .discuss__form
+      &__form {
+      }
+}
+

@@ -1,0 +1,88 @@
+.we-are {
+      padding: 120px 0 90px 0;
+      @media screen and (max-width: 768.98px) {
+            padding: 50px 0 40px 0;
+      }
+      // .we-are__container
+      &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+      // .we-are__heading
+      &__heading {
+            margin: 0 0 60px 0;
+      }
+      // .we-are__title
+      &__title {
+      }
+      // .we-are__subtitle
+      &__subtitle {
+      }
+      // .we-are__video-block
+      &__video-block {
+            position: relative;
+            width: 1230px;
+            height: 500px;
+            @media screen and (max-width: 1280px) {
+                  width: 950px;
+            }
+            @media screen and (max-width: 1000px) {
+                  width: 740px;
+                  height: 400px;
+            }
+            @media screen and (max-width: 767.98px) {
+                  width: 450px;
+                  height: 300px;
+            }
+            @media screen and (max-width: 500px) {
+                  width: 310px;
+                  height: 200px;
+            }
+
+            & video {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+            }
+            &::after {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 4px;
+                  opacity: 0.6;
+                  background-color: var(--color-main);
+                  transition: opacity .2s ease-in, visibility .2s ease-in;
+            }
+            &--hide {
+                  &::after {
+                        opacity: 0;
+                        visibility: hidden;
+                  }
+            }
+      }
+      &__play-btn {            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            z-index: 5;
+            transition: opacity .2s ease-in, visibility .2s ease-in;
+            @media screen and (max-width: 767.98px) {
+                  width: 60px;
+                  height: 60px;
+            }
+            &--hide {
+                  opacity: 0;
+                  visibility: hidden;
+            }
+      }
+}

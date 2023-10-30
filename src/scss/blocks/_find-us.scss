@@ -1,0 +1,52 @@
+.find-us {
+      padding: 60px 0 120px 0;
+
+      background: var(--gray-200, #F4F5F6);
+      @media screen and (max-width: 767.98px) {
+            padding: 40px 0 50px 0;
+      }
+      // .find-us__container
+      &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+      // .find-us__title
+      &__title {
+            margin: 0 0 40px 0;
+      }
+      // .find-us__socials
+      &__socials {
+            display: flex;
+            align-items: center;
+            column-gap: 24px;
+            & li:nth-child(1) .find-us__link:hover svg path {
+                  fill: #25D366;
+            }
+            & li:nth-child(2) .find-us__link:hover svg path {
+                  fill: #00B2FF;
+            }
+            & li:nth-child(3) .find-us__link:hover svg path {
+                  fill: #4267B2;
+            }
+            & li:nth-child(4) .find-us__link:hover svg path {
+                  fill: #1DA1F2;
+            }
+            & li:nth-child(5) .find-us__link:hover svg path {
+                  fill: #FF0000;
+            }
+      }
+      // .find-us__item
+      &__item {
+      }
+      // .find-us__link
+      &__link {
+            & svg path {
+                  transition: fill .2s ease-in;
+            }
+            // &:first-child:hover svg path {
+            //       fill: #25D366;
+            // }
+      }
+}
+

@@ -1,0 +1,157 @@
+.ceo {
+      padding: 120px 0 120px 0;
+      overflow: hidden;
+      position: relative;
+      @media screen and (max-width: 767.98px) {
+            padding: 50px 0 50px 0;
+      }
+      &::after {
+            content: '';
+            position: absolute;
+            bottom: -60px;
+            right: -270px;
+            width: 1023px;
+            height: 825px;
+            background: url('./../../img/ceo-bg.png') no-repeat;
+            z-index: -1;
+      }
+      // .ceo__container
+      &__container {
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 767.98px) {
+                  flex-direction: column;
+                  row-gap: 20px;
+            }
+      }
+      // .ceo__image
+      &__image {
+            width: 525px;
+            height: 580px;
+            @media screen and (max-width: 1280px) {
+                  height: 480px;
+            }
+            @media screen and (max-width: 665px) {
+                  width: 450px;
+                  height: 440px;
+            }
+            @media screen and (max-width: 500px) {
+                  width: 310px;
+                  height: 350px;
+            }
+            & img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+            }
+      }
+      // .ceo__content
+      &__content {
+            transform: translate(-20px, -130px);
+            @media screen and (max-width: 767.98px) {
+                  transform: translate(0, -35px);
+            }
+      }
+}
+.content-ceo {
+      padding: 80px 105px 80px 77px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      border-radius: 4px;
+      background: var(--color-white);
+      box-shadow: 
+            0px 4px 4px -4px rgba(30, 33, 44, 0.03), 
+            0px 12px 10px -6px rgba(154, 156, 165, 0.04), 
+            0px 30px 24px -10px rgba(154, 156, 165, 0.05), 
+            0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+      @media screen and (max-width: 1000px) {
+            padding: 30px 50px 30px 50px;
+      }
+      @media screen and (max-width: 500px) {
+            padding: 30px 20px 30px 10px;
+      }
+      // .content-ceo__text
+      &__text {
+            position: relative;
+            max-width: 590px;
+            padding: 0 0 0 58px;
+            margin: 0 0 50px 0;
+
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.5; /* 30px */
+            color: var(--gray-900);
+            @media screen and (max-width: 1280px) {
+                  font-size: 1rem;
+            }
+            @media screen and (max-width: 1000px) {
+                  font-size: 0.9rem;
+            }
+            @media screen and (max-width: 500px) {
+                  margin: 0 0 15px 0;
+                  font-size: 0.825rem;
+            }
+            & p:not(:last-child) {
+                  margin: 0 0 30px 0;
+                  @media screen and (max-width: 625px) {
+                        margin: 0 0 15px 0;
+                  }
+            }
+            &::before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 28px;
+                  height: 20px;
+                  background: url('./../../img/icons/braces.svg') no-repeat;
+            }
+      }
+      // .content-ceo__info
+      &__info {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // column-gap: 7.5vw;
+      }
+      // .content-ceo__info-block
+      &__info-block {
+            margin: 0 0 0 3vw;
+      }
+      // .content-ceo__name
+      &__name {
+            margin: 0 0 4px 0;
+
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.6; /* 25.6px */
+            color: var(--gray-900);
+            @media screen and (max-width: 500px) {
+                  font-size: 0.825rem;
+            }
+      }
+      // .content-ceo__position
+      &__position {
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.5; /* 21px */
+            color: var(--gray-700);
+            @media screen and (max-width: 500px) {
+                  font-size: 0.725rem;
+            }
+      }
+      // .content-ceo__signature
+      &__signature {
+            width: 100px;
+            height: 68px;
+            & img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+            }
+      }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>News Inner</title>
+            <link rel="stylesheet" href="./css/main.css">
+      </head>
+      <body id="page">
+            @@include('blocks/header-news.html')
+
+            <main>
+                  @@include('blocks/intro-news-inner.html')
+                  @@include('blocks/article.html')
+                  @@include('blocks/comments.html')
+                  @@include('blocks/leave-comment.html')
+                  @@include('blocks/discuss.html')
+            </main>
+
+            @@include('blocks/footer.html')
+            <script src="./js/index.bundle.js"></script>
+      </body>
+</html>

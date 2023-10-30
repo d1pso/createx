@@ -1,0 +1,55 @@
+.leave-comment {
+      padding: 0 0 180px 0;
+      @media screen and (max-width: 767.98px) {
+            padding: 0 0 50px 0;
+      }
+      // .leave-comment__container
+      &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+      // .leave-comment__title
+      &__title {
+            margin: 0 0 50px 0;
+      }
+      // .leave-comment__form
+      &__form {
+            padding: unset;
+            width: 810px;
+
+            box-shadow: none;
+            border: none;
+            @media screen and (max-width: 767.98px) {
+                  width: 610px;
+            }
+            @media screen and (max-width: 625px) {
+                  width: 480px;
+            }
+            @media screen and (max-width: 500px) {
+                  width: 310px;
+            }
+      }
+}
+.form {
+      // .form__subblock
+      &__subblock {
+            
+      }
+      // .form__block
+      &__block {
+      }
+      // .form__text
+      &__text {
+      }
+      // .form__input
+      &__input {
+      }
+      // .form__textarea
+      &__textarea {
+      }
+      // .form__btn
+      &__btn {
+      }
+}
+
